@@ -1,0 +1,8 @@
+interface,description,vlan,trunk
+GigabitEthernet1/0/5,TE5,30,No
+GigabitEthernet1/0/6,TE6,40,No
+GigabitEthernet1/0/7,TE7,40,No
+GigabitEthernet1/0/8,TE8,40,No
+GigabitEthernet1/0/9,TE9,40,No
+GigabitEthernet1/0/10,TE10,40,No
+GigabitEthernet1/0/20,TE20,"5,10,20,30,40",Yes

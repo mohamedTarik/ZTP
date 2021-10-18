@@ -1,0 +1,12 @@
+interface {{ Interface }}
+ description {{ Description }}
+ {% if Trunk == "Yes" -%}
+ switchport mode Trunk
+ switchport trunk allowed vlan {{ Vlan }}
+ {% else -%}
+ switchport mode access
+ switchport access vlan {{ Vlan }}
+ {% endif -%}
+
+
+

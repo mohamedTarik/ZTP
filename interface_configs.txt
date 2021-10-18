@@ -1,0 +1,8 @@
+vlan {vlan_number}
+name {vlan_name}
+vlan {vlan_number}
+name {vlan_name}
+vlan {vlan_number}
+name {vlan_name}
+vlan {vlan_number}
+name {vlan_name}
