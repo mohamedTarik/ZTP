@@ -2,7 +2,6 @@ from jinja2 import Template
 from netmiko import ConnectHandler
 from pythonping import ping
 
-
 switch = {'ip': '192.168.30.70', 'user': 'admin', 'pass': 'cisco'}
 print("Connecting...\n")
 
@@ -12,6 +11,9 @@ conn.enable()
 print("Connected")
 file = "interfaces.csv"
 template = "switchport-template.j2"
+# Added a commint
+# added sec commint
+# added 3rd commint
 
 with open(template) as j:
     interface_template = Template(j.read(), keep_trailing_newline=True)
@@ -36,3 +38,21 @@ print("Done...")
 
 with open("interface_configs.txt", "w") as w:
     w.write(interface_configs)
+    # Red
+    # Green
+    # Blue
+    # New Change
+    # Sec New Change
+    # 3rd New Change
+    # 4th Change
+    # 5th Change
+    # Red
+    # Green
+    # Blue
+    # BluBecone
+    # BlackBecone
+    # BlackFootBall
+    # BlackBasketBall
+    # GreenBall
+    # BlueBall
+

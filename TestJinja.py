@@ -10,18 +10,18 @@ conn = ConnectHandler(secret='kit123', ip=switch['ip'], username=switch['user'],
 conn.enable()
 print("Connected")
 
-interfaces_csv = "interfaces.csv"
+interfaces_ = "interfaces.csv"
 interface_temp = "switchport-template.j2"
 all_configs = " "
 
 with open(interface_temp) as j:
-    interface_template = Template(j.read(), keep_trailing_newline=True)
+    interface_temp2 = Template(j.read(), keep_trailing_newline=True)
 
-type(interface_template)
-with open(interfaces_csv) as f:
+type(interface_temp2)
+with open(interfaces_) as f:
     read = csv.DictReader(f)
     for vlan_row in read:
-        interface_config = interface_template.render(
+        interface_config = interface_temp2.render(
             Interface=vlan_row["interface"],
             Description=vlan_row["description"],
             Trunk=vlan_row["trunk"],
